@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>List of Products</h1>
+  <app-products></app-products>
+</div>
+
+<ul>
+  <li *ngFor="let product of products">
+    <h2>{{ product.name }}</h2>
+    <img src="{{product.photo}}" alt="" height="200px">
+    <p><strong>${{product.price}}</strong></p>
+    <p>{{product.description}}</p>
+  </li>
+</ul>
+
+
+
+<router-outlet></router-outlet>
